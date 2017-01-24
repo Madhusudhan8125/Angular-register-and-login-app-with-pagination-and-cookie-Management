@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="loginapp">
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Login POC</title>
+    <link href="app.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script type=""  scr="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-cookies.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div  ng-controller="RegisterCtrl">
+      <h3> Register</h3>
+      <div ng-view>
+        <input type="text" id="name" ng-model="cookieValue1">
+        <input type="password" id="pass"  ng-model="cookieValue2">
+        <button ng-click="set.Cookie()">Register</button>
+        {{myc1}}
+      </div>
+    </div>
+    <div  ng-controller="loginCtrl">
+      <h3>Login</h3>
+      <div ng-view>
+      </div>
+    </div>
+</body>
+</html>
+
